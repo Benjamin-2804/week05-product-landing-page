@@ -1,6 +1,4 @@
-# RonAyin's LPG Store — Product Landing Page
-
-**Week 05 Project | Laravel + Tailwind CSS**
+# Mini Project 04: Responsive Product Landing Page
 
 ---
 
@@ -430,31 +428,3 @@ The palette uses analogous warm tones (orange → amber) with a neutral gray sca
 🔗 [https://github.com/Benjamin-2804/week05-product-landing-page](https://github.com/Benjamin-2804/week05-product-landing-page)
 
 ---
-
-## How to Run Locally
-
-```bash
-# Install PHP dependencies
-composer install
-
-# Install Node dependencies
-npm install
-
-# Copy environment file
-cp .env.example .env
-
-# Generate app key
-php artisan key:generate
-
-# Build assets
-npm run build
-
-# Start development server
-php artisan serve
-```
-
-Open **http://127.0.0.1:8000** in your browser.
-
----
-
-*Built with Laravel 11 · Tailwind CSS v4 · Vite · Blade Components*

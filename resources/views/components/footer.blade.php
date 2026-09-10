@@ -77,11 +77,10 @@
                 <h3 class="text-white font-semibold text-sm uppercase tracking-widest mb-5">Quick Links</h3>
                 <ul class="flex flex-col gap-3 text-sm">
                     <li><a href="#home"         class="hover:text-orange-400 transition-colors">Home</a></li>
-                    <li><a href="#features"     class="hover:text-orange-400 transition-colors">Features</a></li>
-                    <li><a href="#showcase"     class="hover:text-orange-400 transition-colors">Products</a></li>
-                    <li><a href="#pricing"      class="hover:text-orange-400 transition-colors">Pricing</a></li>
+                    <li><a href="#features"     class="hover:text-orange-400 transition-colors">Why Us</a></li>
+                    <li><a href="#products"     class="hover:text-orange-400 transition-colors">Products</a></li>
                     <li><a href="#testimonials" class="hover:text-orange-400 transition-colors">Testimonials</a></li>
-                    <li><a href="#cta"          class="hover:text-orange-400 transition-colors">Get Started</a></li>
+                    <li><a href="#contact"      class="hover:text-orange-400 transition-colors">Contact</a></li>
                 </ul>
             </div>
 
@@ -89,12 +88,11 @@
             <div>
                 <h3 class="text-white font-semibold text-sm uppercase tracking-widest mb-5">Services</h3>
                 <ul class="flex flex-col gap-3 text-sm">
-                    <li><a href="#pricing" class="hover:text-orange-400 transition-colors">Home Delivery</a></li>
-                    <li><a href="#pricing" class="hover:text-orange-400 transition-colors">Commercial Supply</a></li>
-                    <li><a href="#pricing" class="hover:text-orange-400 transition-colors">Tank Exchange</a></li>
-                    <li><a href="#pricing" class="hover:text-orange-400 transition-colors">Subscription Plans</a></li>
-                    <li><a href="#contact"  class="hover:text-orange-400 transition-colors">Emergency Delivery</a></li>
-                    <li><a href="#contact"  class="hover:text-orange-400 transition-colors">Safety Inspection</a></li>
+                    <li><a href="#products" class="hover:text-orange-400 transition-colors">Home Delivery</a></li>
+                    <li><a href="#products" class="hover:text-orange-400 transition-colors">Commercial Supply</a></li>
+                    <li><a href="#products" class="hover:text-orange-400 transition-colors">Tank Exchange</a></li>
+                    <li><a href="#cta"      class="hover:text-orange-400 transition-colors">Emergency Delivery</a></li>
+                    <li><a href="#cta"      class="hover:text-orange-400 transition-colors">Safety Inspection</a></li>
                 </ul>
             </div>
 

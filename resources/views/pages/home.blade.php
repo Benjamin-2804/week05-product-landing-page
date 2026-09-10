@@ -9,7 +9,7 @@
     <x-hero
         product-name="RonAyin LPG Store"
         headline='Your Trusted<br /><span class="text-orange-500">LPG Partner</span>'
-        description="Safe, certified, and affordable liquefied petroleum gas delivered straight to your home or business  Efast, hassle-free, every time."
+        description="Safe, certified, and affordable liquefied petroleum gas delivered straight to your home or business. Fast, hassle-free, every time."
         :primary-cta="['label' => 'Shop Products', 'href' => '#products']"
         :secondary-cta="['label' => 'Contact Us',   'href' => '#contact']"
     />

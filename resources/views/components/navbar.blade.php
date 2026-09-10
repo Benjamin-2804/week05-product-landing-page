@@ -7,9 +7,9 @@
                 <img src="{{ Vite::asset("resources/images/RonAyin's LPG Store Logo.png") }}"
                      alt="RonAyin LPG Store Logo"
                      class="h-10 w-auto" />
-                <div class="leading-tight hidden sm:block">
+                <div class="leading-tight">
                     <span class="block text-sm font-bold text-gray-900 leading-none">RonAyin's <span class="text-orange-500">LPG</span></span>
-                    <span class="block text-[10px] text-gray-400 font-medium">Pagsanjan, Laguna</span>
+                    <span class="block text-[10px] text-gray-400 font-medium hidden sm:block">Pagsanjan, Laguna</span>
                 </div>
             </a>
 
