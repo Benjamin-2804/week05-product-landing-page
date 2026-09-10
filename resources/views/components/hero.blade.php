@@ -8,8 +8,7 @@
 
 <section
     id="home"
-    class="relative min-h-screen flex items-center pt-16 overflow-hidden"
-    style="background-image: url('/images/store-bg.jpg'); background-size: cover; background-position: center center;"
+    class="hero-bg relative min-h-screen flex items-center pt-16 overflow-hidden"
 >
     {{-- Dark gradient overlay so text stays readable over the photo --}}
     <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/30" aria-hidden="true"></div>

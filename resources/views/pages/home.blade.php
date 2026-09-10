@@ -15,20 +15,19 @@
     />
 
     {{-- ===== 2. FEATURES ===== --}}
-    <section id="features" class="py-24 bg-white">
+    <section id="features" class="py-16 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-            <x-section-heading
-                eyebrow="Why Choose Us"
-                title='Everything You Need from an <span class="text-orange-500">LPG Provider</span>'
-                subtitle="From safety compliance to same-day delivery, we've built our service around what matters most to you."
-            />
+            <div class="text-center mb-12">
+                <h2 class="text-2xl sm:text-3xl font-bold text-gray-900">Why customers keep coming back</h2>
+                <p class="text-gray-500 mt-3 max-w-xl mx-auto">We've been serving Pagsanjan and nearby areas for years. Here's what we're known for.</p>
+            </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
                 <x-feature-card
                     title="DOE Safety Certified"
-                    description="All cylinders pass rigorous Department of Energy standards and are inspected before every delivery to ensure your family's safety."
+                    description="All our tanks are checked and certified. We don't deliver anything we wouldn't use ourselves."
                     :highlight="true"
                 >
                     <x-slot:icon>
@@ -39,8 +38,8 @@
                 </x-feature-card>
 
                 <x-feature-card
-                    title="Same-Day Delivery"
-                    description="Order before noon and get your LPG delivered the same day within metro areas. Morning and afternoon slots available."
+                    title="Fast Delivery"
+                    description="Order in the morning, get it in the afternoon. We deliver same-day within our coverage area."
                 >
                     <x-slot:icon>
                         <svg class="w-7 h-7 text-orange-500" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
@@ -51,19 +50,19 @@
                 </x-feature-card>
 
                 <x-feature-card
-                    title="24/7 Customer Support"
-                    description="Our dedicated support team is always on standby — call, text, or message us on social media any time of the day or night."
+                    title="Always Available"
+                    description="Call or text us anytime. We're a family business — there's always someone ready to take your order."
                 >
                     <x-slot:icon>
                         <svg class="w-7 h-7 text-orange-500" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                            <path fill-rule="evenodd" d="M4.804 21.644A6.707 6.707 0 0 0 6 21.75a6.721 6.721 0 0 0 3.583-1.029c.774.182 1.584.279 2.417.279 5.322 0 9.75-3.97 9.75-9 0-5.03-4.428-9-9.75-9s-9.75 3.97-9.75 9c0 2.409 1.025 4.587 2.674 6.192.232.226.277.428.254.543a3.73 3.73 0 0 1-.814 1.686.75.75 0 0 0 .44 1.223ZM8.25 10.875a1.125 1.125 0 1 0 0 2.25 1.125 1.125 0 0 0 0-2.25ZM10.875 12a1.125 1.125 0 1 1 2.25 0 1.125 1.125 0 0 1-2.25 0Zm4.875-1.125a1.125 1.125 0 1 0 0 2.25 1.125 1.125 0 0 0 0-2.25Z" clip-rule="evenodd" />
+                            <path fill-rule="evenodd" d="M1.5 4.5a3 3 0 0 1 3-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 0 1-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 0 0 6.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 0 1 1.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 0 1-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5Z" clip-rule="evenodd" />
                         </svg>
                     </x-slot:icon>
                 </x-feature-card>
 
                 <x-feature-card
-                    title="Easy Tank Exchange"
-                    description="Swap your empty cylinder for a full one in minutes. No waiting in line — just call ahead and we'll have your replacement ready."
+                    title="Tank Exchange"
+                    description="Bring your empty tank, swap it for a full one. Quick, easy, no hassle."
                 >
                     <x-slot:icon>
                         <svg class="w-7 h-7 text-orange-500" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
@@ -73,8 +72,8 @@
                 </x-feature-card>
 
                 <x-feature-card
-                    title="Competitive Pricing"
-                    description="Transparent, fair pricing with zero hidden charges. Bulk and regular customers get exclusive discounts."
+                    title="Honest Prices"
+                    description="No hidden charges, no surprises. What you see is what you pay — always."
                 >
                     <x-slot:icon>
                         <svg class="w-7 h-7 text-orange-500" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
@@ -86,8 +85,8 @@
                 </x-feature-card>
 
                 <x-feature-card
-                    title="Wide Service Coverage"
-                    description="We deliver across Metro Manila and nearby provinces. Our growing fleet ensures you're never far from reliable LPG supply."
+                    title="Multiple Brands"
+                    description="We carry Petron, Regasco, Solane, and LM Gas — so you can stick with the brand you trust."
                 >
                     <x-slot:icon>
                         <svg class="w-7 h-7 text-orange-500" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
@@ -101,217 +100,93 @@
     </section>
 
     {{-- ===== 3. PRODUCTS ===== --}}
-    <section id="products" class="py-24 bg-gray-50">
+    <section id="products" class="py-16 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-            <x-section-heading
-                eyebrow="Our Products"
-                title='LPG Tanks &amp; <span class="text-orange-500">Parts</span>'
-                subtitle="From household cylinders to commercial tanks and accessories — everything you need for safe and reliable LPG use."
-            />
+            <div class="text-center mb-10">
+                <h2 class="text-2xl sm:text-3xl font-bold text-gray-900">Products & Parts</h2>
+                <p class="text-gray-500 mt-3">Tanks, regulators, hoses, and more. Photos coming soon for each item.</p>
+            </div>
 
-            {{-- Category filter tabs --}}
+            {{-- Category tabs --}}
             <div class="flex flex-wrap gap-2 justify-center mb-10">
                 @foreach (['All', 'LPG Tanks', 'Regulators', 'Hoses & Fittings', 'Accessories'] as $cat)
-                    <button
-                        type="button"
+                    <button type="button"
                         class="text-sm font-medium px-4 py-2 rounded-full border transition-colors
                                {{ $loop->first
                                     ? 'bg-orange-500 text-white border-orange-500'
-                                    : 'bg-white text-gray-600 border-gray-200 hover:border-orange-300 hover:text-orange-500' }}"
-                    >
+                                    : 'bg-white text-gray-600 border-gray-200 hover:border-orange-300 hover:text-orange-500' }}">
                         {{ $cat }}
                     </button>
                 @endforeach
             </div>
 
-            {{-- Product grid --}}
             <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-5">
-
-                {{-- LPG Tanks --}}
-                <x-pricing-card name="11 kg LPG Tank"          price="₱580"   tag="Home Use"   cta-href="#get-started" />
-                <x-pricing-card name="22 kg LPG Tank"          price="₱1,050" tag="Best Seller" cta-href="#get-started" />
-                <x-pricing-card name="50 kg LPG Tank"          price="₱2,300" tag="Commercial"  cta-href="#get-started" />
-                <x-pricing-card name="2.7 kg Portable Tank"    price="₱380"                     cta-href="#get-started" />
-                <x-pricing-card name="100 kg Bulk Tank"        price="₱4,800" tag="Industrial"  cta-href="#get-started" />
-
-                {{-- Regulators --}}
-                <x-pricing-card name="Standard Regulator"      price="₱120"                     cta-href="#get-started" />
-                <x-pricing-card name="High-Pressure Regulator" price="₱280"                     cta-href="#get-started" />
-                <x-pricing-card name="Dual-Stage Regulator"    price="₱350"                     cta-href="#get-started" />
-
-                {{-- Hoses & Fittings --}}
-                <x-pricing-card name="LPG Rubber Hose (1m)"   price="₱95"                      cta-href="#get-started" />
-                <x-pricing-card name="LPG Rubber Hose (2m)"   price="₱160"                     cta-href="#get-started" />
-                <x-pricing-card name="Hose Clamp Set"          price="₱45"                      cta-href="#get-started" />
-                <x-pricing-card name="Quick-Connect Fitting"   price="₱75"                      cta-href="#get-started" />
-
-                {{-- Accessories --}}
-                <x-pricing-card name="Gas Leak Detector"       price="₱220"  tag="Safety"      cta-href="#get-started" />
-                <x-pricing-card name="LPG Safety Cap"          price="₱35"                      cta-href="#get-started" />
-                <x-pricing-card name="Tank Trolley / Cart"     price="₱450"                     cta-href="#get-started" />
-
+                <x-pricing-card name="11 kg LPG Tank"          price="₱580"   tag="Home Use"    cta-href="#get-started" />
+                <x-pricing-card name="22 kg LPG Tank"          price="₱1,050" tag="Best Seller"  cta-href="#get-started" />
+                <x-pricing-card name="50 kg LPG Tank"          price="₱2,300" tag="Commercial"   cta-href="#get-started" />
+                <x-pricing-card name="2.7 kg Portable Tank"    price="₱380"                      cta-href="#get-started" />
+                <x-pricing-card name="100 kg Bulk Tank"        price="₱4,800" tag="Industrial"   cta-href="#get-started" />
+                <x-pricing-card name="Standard Regulator"      price="₱120"                      cta-href="#get-started" />
+                <x-pricing-card name="High-Pressure Regulator" price="₱280"                      cta-href="#get-started" />
+                <x-pricing-card name="Dual-Stage Regulator"    price="₱350"                      cta-href="#get-started" />
+                <x-pricing-card name="LPG Rubber Hose (1m)"   price="₱95"                       cta-href="#get-started" />
+                <x-pricing-card name="LPG Rubber Hose (2m)"   price="₱160"                      cta-href="#get-started" />
+                <x-pricing-card name="Hose Clamp Set"          price="₱45"                       cta-href="#get-started" />
+                <x-pricing-card name="Quick-Connect Fitting"   price="₱75"                       cta-href="#get-started" />
+                <x-pricing-card name="Gas Leak Detector"       price="₱220"   tag="Safety"       cta-href="#get-started" />
+                <x-pricing-card name="LPG Safety Cap"          price="₱35"                       cta-href="#get-started" />
+                <x-pricing-card name="Tank Trolley / Cart"     price="₱450"                      cta-href="#get-started" />
             </div>
 
             <p class="text-center text-sm text-gray-400 mt-10">
-                Looking for bulk orders or items not listed here?
-                <a href="#contact" class="text-orange-500 hover:underline font-medium ml-1">Contact us →</a>
+                Need something not on the list?
+                <a href="#contact" class="text-orange-500 hover:underline font-medium ml-1">Message us →</a>
             </p>
 
         </div>
     </section>
 
-    {{-- ===== 4. PRODUCT SHOWCASE ===== --}}
-    <section id="showcase" class="py-24 bg-white">
+    {{-- ===== 4. STORE PHOTOS ===== --}}
+    <section id="showcase" class="py-16 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-            <x-section-heading
-                eyebrow="Product Showcase"
-                title='A Complete LPG Solution <span class="text-orange-500">for Every Need</span>'
-                subtitle="From our intuitive ordering dashboard to mobile-friendly experience, managing your gas supply has never been this easy."
-            />
+            <div class="text-center mb-10">
+                <h2 class="text-2xl sm:text-3xl font-bold text-gray-900">Our Store</h2>
+                <p class="text-gray-500 mt-3">Located at Brgy. San Isidro, Pagsanjan, Laguna. Drop by or call ahead for pickup.</p>
+            </div>
 
-            {{-- Dashboard preview --}}
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
-                <div>
-                    <div class="relative bg-white rounded-3xl shadow-2xl overflow-hidden border border-gray-200">
-                        <div class="flex items-center gap-2 px-5 py-3 border-b border-gray-100 bg-gray-50">
-                            <span class="w-3 h-3 bg-red-400 rounded-full"></span>
-                            <span class="w-3 h-3 bg-yellow-400 rounded-full"></span>
-                            <span class="w-3 h-3 bg-green-400 rounded-full"></span>
-                            <div class="flex-1 mx-4 bg-gray-200 rounded-full h-5 flex items-center px-3">
-                                <span class="text-[10px] text-gray-400">ronayinlpg.com/dashboard</span>
-                            </div>
-                        </div>
-                        <div class="p-6">
-                            <div class="flex items-center justify-between mb-6">
-                                <div>
-                                    <p class="text-xs text-gray-400 font-medium uppercase tracking-widest">Dashboard</p>
-                                    <p class="text-lg font-bold text-gray-900">Welcome back, Juan!</p>
-                                </div>
-                                <span class="bg-green-100 text-green-700 text-xs font-semibold px-3 py-1 rounded-full">Active</span>
-                            </div>
-                            <div class="grid grid-cols-3 gap-4 mb-6">
-                                <div class="bg-orange-50 rounded-2xl p-4 text-center">
-                                    <p class="text-2xl font-extrabold text-orange-500">3</p>
-                                    <p class="text-[11px] text-gray-500 mt-1">Orders This Month</p>
-                                </div>
-                                <div class="bg-blue-50 rounded-2xl p-4 text-center">
-                                    <p class="text-2xl font-extrabold text-blue-500">22kg</p>
-                                    <p class="text-[11px] text-gray-500 mt-1">Last Tank Size</p>
-                                </div>
-                                <div class="bg-green-50 rounded-2xl p-4 text-center">
-                                    <p class="text-2xl font-extrabold text-green-500">₱1,050</p>
-                                    <p class="text-[11px] text-gray-500 mt-1">Last Order</p>
-                                </div>
-                            </div>
-                            <div class="bg-gray-50 rounded-2xl p-4">
-                                <div class="flex items-center justify-between mb-3">
-                                    <p class="text-xs font-semibold text-gray-700">Latest Order</p>
-                                    <span class="text-[10px] bg-orange-100 text-orange-600 px-2 py-0.5 rounded-full font-semibold">Out for Delivery</span>
-                                </div>
-                                <div class="flex items-center gap-3">
-                                    <div class="w-8 h-8 bg-orange-100 rounded-xl flex items-center justify-center">
-                                        <svg class="w-4 h-4 text-orange-500" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                                            <path fill-rule="evenodd" d="M12.963 2.286a.75.75 0 0 0-1.071-.136 9.742 9.742 0 0 0-3.539 6.176 7.547 7.547 0 0 1-1.705-1.715.75.75 0 0 0-1.152-.082A9 9 0 1 0 15.68 4.534a7.46 7.46 0 0 1-2.717-2.248ZM15.75 14.25a3.75 3.75 0 1 1-7.313-1.172c.628.465 1.35.81 2.133 1a5.99 5.99 0 0 1 1.925-3.546 3.75 3.75 0 0 1 3.255 3.718Z" clip-rule="evenodd" />
-                                        </svg>
-                                    </div>
-                                    <div class="flex-1">
-                                        <p class="text-xs font-semibold text-gray-800">22 kg LPG Cylinder × 1</p>
-                                        <p class="text-[11px] text-gray-400">ETA: 30 minutes</p>
-                                    </div>
-                                    <p class="text-sm font-bold text-gray-900">₱1,050</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+                <div class="rounded-2xl overflow-hidden shadow-md">
+                    <img src="{{ Vite::asset('resources/images/Stacked.jpg') }}"
+                         alt="LPG tanks stacked at RonAyin store"
+                         class="w-full h-72 object-cover" />
                 </div>
-
-                <div class="flex flex-col gap-6">
-                    <h3 class="text-2xl font-extrabold text-gray-900">Track Every Order in Real Time</h3>
-                    <p class="text-gray-500 leading-relaxed">Our dashboard gives you full visibility into your orders, delivery status, and billing history — all in one place.</p>
-                    @foreach ([
-                        ['title' => 'Live Delivery Tracking',     'body' => 'Monitor your delivery from dispatch to doorstep with real-time status updates.'],
-                        ['title' => 'Order History & Invoices',   'body' => 'Access past orders and download invoices for accounting and expense tracking.'],
-                        ['title' => 'Easy Reordering',            'body' => 'Reorder your last purchase in one tap — no need to fill out the form again.'],
-                        ['title' => 'Multiple Delivery Addresses','body' => 'Save your home, office, and other locations for faster repeat orders.'],
-                    ] as $highlight)
-                        <div class="flex items-start gap-4">
-                            <div class="w-10 h-10 bg-orange-100 rounded-xl flex items-center justify-center shrink-0">
-                                <svg class="w-5 h-5 text-orange-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                    <path fill-rule="evenodd" d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.857-9.809a.75.75 0 0 0-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 1 0-1.06 1.061l2.5 2.5a.75.75 0 0 0 1.137-.089l4-5.5Z" clip-rule="evenodd" />
-                                </svg>
-                            </div>
-                            <div>
-                                <p class="text-sm font-semibold text-gray-900 mb-1">{{ $highlight['title'] }}</p>
-                                <p class="text-sm text-gray-500">{{ $highlight['body'] }}</p>
-                            </div>
-                        </div>
-                    @endforeach
+                <div class="rounded-2xl overflow-hidden shadow-md">
+                    <img src="{{ Vite::asset('resources/images/Stacked 2.jpg') }}"
+                         alt="LPG tanks available at RonAyin store"
+                         class="w-full h-72 object-cover" />
                 </div>
             </div>
 
-            {{-- Mobile view --}}
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                <div class="order-2 lg:order-1 flex flex-col gap-6">
-                    <h3 class="text-2xl font-extrabold text-gray-900">Order Anytime, Anywhere</h3>
-                    <p class="text-gray-500 leading-relaxed">Our mobile-optimized experience means you can place an order, check delivery status, and manage your account from any smartphone.</p>
-                    <div class="flex flex-wrap gap-3">
-                        <span class="bg-orange-100 text-orange-700 text-xs font-semibold px-4 py-2 rounded-full">📱 Mobile Friendly</span>
-                        <span class="bg-orange-100 text-orange-700 text-xs font-semibold px-4 py-2 rounded-full">⚡ Fast Loading</span>
-                        <span class="bg-orange-100 text-orange-700 text-xs font-semibold px-4 py-2 rounded-full">🔔 Push Notifications</span>
-                        <span class="bg-orange-100 text-orange-700 text-xs font-semibold px-4 py-2 rounded-full">🌐 Works Offline</span>
+            {{-- Simple how it works --}}
+            <div class="bg-gray-50 rounded-2xl p-8">
+                <h3 class="text-lg font-bold text-gray-900 mb-6 text-center">How to Order</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
+                    <div class="flex flex-col items-center gap-3">
+                        <div class="w-12 h-12 bg-orange-500 text-white rounded-full flex items-center justify-center text-xl font-bold">1</div>
+                        <p class="font-semibold text-gray-800 text-sm">Call or Text Us</p>
+                        <p class="text-gray-500 text-sm">0935-355-8958 or 0997-327-9175. Tell us what you need and your address.</p>
                     </div>
-                    <x-button href="#products" variant="primary" size="md" class="self-start">
-                        Browse Products
-                    </x-button>
-                </div>
-
-                {{-- Phone mockup --}}
-                <div class="order-1 lg:order-2 flex justify-center">
-                    <div class="relative">
-                        <div class="w-56 bg-gray-900 rounded-[2.5rem] p-3 shadow-2xl border-4 border-gray-800">
-                            <div class="bg-white rounded-[2rem] overflow-hidden">
-                                <div class="flex items-center justify-between px-5 pt-3 pb-1">
-                                    <span class="text-[10px] font-semibold text-gray-700">9:41</span>
-                                    <div class="flex gap-1">
-                                        <span class="w-4 h-1.5 bg-gray-700 rounded-sm"></span>
-                                        <span class="w-3 h-1.5 bg-gray-700 rounded-sm"></span>
-                                        <span class="w-1.5 h-1.5 bg-gray-700 rounded-full"></span>
-                                    </div>
-                                </div>
-                                <div class="px-4 pb-6 pt-2">
-                                    <div class="flex items-center justify-between mb-4">
-                                        <div>
-                                            <p class="text-[10px] text-gray-400">Good morning,</p>
-                                            <p class="text-sm font-bold text-gray-900">Juan 👋</p>
-                                        </div>
-                                        <div class="w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center text-orange-500 font-bold text-xs">J</div>
-                                    </div>
-                                    <button class="w-full bg-orange-500 text-white text-xs font-bold py-3 rounded-2xl mb-4">
-                                        + New Order
-                                    </button>
-                                    <p class="text-[10px] font-semibold text-gray-400 uppercase tracking-widest mb-2">Recent</p>
-                                    <div class="flex items-center gap-2 bg-gray-50 rounded-xl p-3 mb-2">
-                                        <div class="w-7 h-7 bg-orange-100 rounded-lg flex items-center justify-center text-orange-500 text-xs">🔥</div>
-                                        <div class="flex-1">
-                                            <p class="text-[10px] font-semibold text-gray-800">22 kg Cylinder</p>
-                                            <p class="text-[9px] text-gray-400">Delivered · Sep 8</p>
-                                        </div>
-                                        <span class="text-[10px] font-bold text-green-600">✓</span>
-                                    </div>
-                                    <div class="flex items-center gap-2 bg-orange-50 rounded-xl p-3">
-                                        <div class="w-7 h-7 bg-orange-200 rounded-lg flex items-center justify-center text-orange-600 text-xs">🚚</div>
-                                        <div class="flex-1">
-                                            <p class="text-[10px] font-semibold text-gray-800">11 kg Cylinder</p>
-                                            <p class="text-[9px] text-orange-500">On the way · ETA 30min</p>
-                                        </div>
-                                        <span class="w-2 h-2 bg-orange-400 rounded-full animate-pulse"></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="absolute top-5 left-1/2 -translate-x-1/2 w-20 h-4 bg-gray-900 rounded-b-2xl"></div>
+                    <div class="flex flex-col items-center gap-3">
+                        <div class="w-12 h-12 bg-orange-500 text-white rounded-full flex items-center justify-center text-xl font-bold">2</div>
+                        <p class="font-semibold text-gray-800 text-sm">We Prepare Your Order</p>
+                        <p class="text-gray-500 text-sm">We check stock and get your tank or parts ready. Usually takes just a few minutes.</p>
+                    </div>
+                    <div class="flex flex-col items-center gap-3">
+                        <div class="w-12 h-12 bg-orange-500 text-white rounded-full flex items-center justify-center text-xl font-bold">3</div>
+                        <p class="font-semibold text-gray-800 text-sm">Delivered to Your Door</p>
+                        <p class="text-gray-500 text-sm">We deliver same-day. Our rider checks connections and makes sure everything is safe before leaving.</p>
                     </div>
                 </div>
             </div>
@@ -320,118 +195,124 @@
     </section>
 
     {{-- ===== 5. TESTIMONIALS ===== --}}
-    <section id="testimonials" class="py-24 bg-orange-50">
+    <section id="testimonials" class="py-16 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-            <x-section-heading
-                eyebrow="Testimonials"
-                title='Loved by Homes &amp; <span class="text-orange-500">Businesses</span>'
-                subtitle="Don't just take our word for it — here's what our customers have to say."
-            />
+            <div class="text-center mb-10">
+                <h2 class="text-2xl sm:text-3xl font-bold text-gray-900">What our customers say</h2>
+            </div>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
-                <x-testimonial-card name="Maria Santos"    position="Homemaker, Quezon City"     initials="M" :rating="5"
-                    review="Super reliable! I ordered in the morning and it was delivered by lunch. The delivery guy even checked the connections for leaks before leaving." />
-                <x-testimonial-card name="Ramon Cruz"      position="Restaurant Owner, Manila"    initials="R" :rating="5"
-                    review="We switched all our commercial tanks to RonAyin two years ago and it's been the best decision. Price is fair, service is excellent." />
-                <x-testimonial-card name="Jenelyn Reyes"   position="Catering Business, Caloocan" initials="J" :rating="5"
-                    review="The range of products is impressive — from tanks to regulators and hoses, everything I need is in one place. Delivery is always on time." />
-                <x-testimonial-card name="Bernard Lim"     position="Bakery Owner, Pasig"         initials="B" :rating="5"
-                    review="Ang bilis ng delivery at ang bait ng staff! Lahat ng kailangan namin sa LPG ay available dito. Hindi na kami nag-alala sa gas supply namin." />
-                <x-testimonial-card name="Ana Villanueva"  position="Property Manager, Makati"    initials="A" :rating="4"
-                    review="I manage 12 residential units and RonAyin handles all of them without a hitch. Wide product selection and fast delivery make them the best." />
-                <x-testimonial-card name="Carlo Mendoza"   position="Food Stall Operator, Taguig" initials="C" :rating="5"
-                    review="As a small business owner, every peso counts. Their prices are fair, hoses and regulators are quality, and support is always quick to respond." />
+                <x-testimonial-card
+                    name="Maria S."
+                    position="Pagsanjan"
+                    initials="M"
+                    :rating="5"
+                    review="Nagtawag lang ako ng umaga, nadeliver na ng tanghali. Yung rider nag-check pa ng connections bago umalis. Sobrang bilis talaga!" />
+
+                <x-testimonial-card
+                    name="Ramon C."
+                    position="Restaurant owner, nearby area"
+                    initials="R"
+                    :rating="5"
+                    review="Dalawang taon na kaming gumagamit ng RonAyin para sa aming restaurant. Hindi pa kami nabigo kahit minsan. Tama lang ang presyo at laging on-time." />
+
+                <x-testimonial-card
+                    name="Tita Nely"
+                    position="Regular customer"
+                    initials="N"
+                    :rating="5"
+                    review="Dito na lang talaga ako bumibili. Malapit, mabilis, at hindi magastos. Yung mga tauhan nila magalang at maayos." />
+
+                <x-testimonial-card
+                    name="Bernard L."
+                    position="Bakery owner, Laguna"
+                    initials="B"
+                    :rating="5"
+                    review="Para sa aming bakery na mataas ang gamit ng gas, malaking tulong ang RonAyin. Laging may stock at maaasahan." />
+
+                <x-testimonial-card
+                    name="Jenny R."
+                    position="Catering business"
+                    initials="J"
+                    :rating="5"
+                    review="Gusto ko na may hose at regulator din sila. One stop na lahat. Hindi na ako pumupunta pa sa ibang lugar." />
+
+                <x-testimonial-card
+                    name="Carlo M."
+                    position="Food stall, Pagsanjan"
+                    initials="C"
+                    :rating="5"
+                    review="Yung 11 kg na tank sakto lang sa aming tindahan. Presyo hindi lumalayo, at palagi silang sumasagot pag tinawagan mo." />
 
             </div>
         </div>
     </section>
 
-    {{-- ===== 6. CALL TO ACTION ===== --}}
-    <section id="cta" class="py-24 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 relative overflow-hidden">
-
-        <div class="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
-            <div class="absolute -top-24 -right-24 w-96 h-96 bg-orange-500 rounded-full opacity-10 blur-3xl"></div>
-            <div class="absolute -bottom-24 -left-24 w-72 h-72 bg-amber-500 rounded-full opacity-10 blur-3xl"></div>
-        </div>
-
-        <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <span class="inline-block bg-orange-500/20 text-orange-400 text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-6">
-                Get Started Today
-            </span>
-            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white leading-tight mb-6">
-                Ready to Never Run Out of <span class="text-orange-400">Gas Again?</span>
-            </h2>
-            <p class="text-lg text-gray-400 leading-relaxed max-w-2xl mx-auto mb-10">
-                Join thousands of households and businesses that trust RonAyin LPG for tanks, parts, and fast delivery.
-            </p>
+    {{-- ===== 6. CONTACT / CTA ===== --}}
+    <section id="cta" class="py-16 bg-orange-500">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+            <h2 class="text-3xl font-bold text-white mb-3">Need gas? Give us a ring.</h2>
+            <p class="text-orange-100 mb-8 text-lg">We're based in Brgy. San Isidro, Pagsanjan, Laguna. Call or text us and we'll sort you out.</p>
 
             <div class="flex flex-col sm:flex-row gap-4 justify-center mb-10">
-                <x-button href="#get-started" variant="primary" size="lg">
-                    Start Free Trial
-                    <svg class="w-4 h-4 ml-2" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                        <path fill-rule="evenodd" d="M3 10a.75.75 0 0 1 .75-.75h10.638L10.23 5.29a.75.75 0 1 1 1.04-1.08l5.5 5.25a.75.75 0 0 1 0 1.08l-5.5 5.25a.75.75 0 1 1-1.04-1.08l4.158-3.96H3.75A.75.75 0 0 1 3 10Z" clip-rule="evenodd" />
-                    </svg>
-                </x-button>
-                <x-button href="tel:+639353558958" variant="outline" size="lg" class="border-gray-600 text-gray-300 hover:border-orange-400 hover:text-orange-400">
-                    Contact Sales
-                </x-button>
-                <x-button href="#get-started" variant="ghost" size="lg" class="text-gray-400 hover:text-orange-400">
-                    Register Now
-                </x-button>
+                <a href="tel:+639353558958"
+                   class="bg-white text-orange-500 font-bold text-base px-8 py-3.5 rounded-full hover:bg-orange-50 transition-colors shadow-sm">
+                    📞 0935-355-8958
+                </a>
+                <a href="tel:+639973279175"
+                   class="bg-white text-orange-500 font-bold text-base px-8 py-3.5 rounded-full hover:bg-orange-50 transition-colors shadow-sm">
+                    📞 0997-327-9175
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=100063899616677"
+                   target="_blank" rel="noopener noreferrer"
+                   class="bg-orange-600 text-white font-bold text-base px-8 py-3.5 rounded-full hover:bg-orange-700 transition-colors">
+                    Message on Facebook
+                </a>
             </div>
 
-            <div class="flex flex-wrap gap-6 justify-center text-sm text-gray-500">
-                @foreach (['Fast same-day delivery', 'DOE certified products', 'Free leak check on delivery'] as $trust)
-                    <span class="flex items-center gap-2">
-                        <svg class="w-4 h-4 text-green-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                            <path fill-rule="evenodd" d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.857-9.809a.75.75 0 0 0-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 1 0-1.06 1.061l2.5 2.5a.75.75 0 0 0 1.137-.089l4-5.5Z" clip-rule="evenodd" />
-                        </svg>
-                        {{ $trust }}
-                    </span>
-                @endforeach
-            </div>
+            <p class="text-orange-100 text-sm">Or fill in the form below and we'll get back to you.</p>
         </div>
     </section>
 
     {{-- ===== 7. ORDER FORM ===== --}}
-    <section id="get-started" class="py-24 bg-orange-500">
+    <section id="get-started" class="py-16 bg-white">
         <div class="max-w-xl mx-auto px-4 sm:px-6">
-            <div class="text-center mb-10">
-                <h2 class="text-3xl font-extrabold text-white">Place an Order</h2>
-                <p class="text-orange-100 mt-3">Fill in the form and we'll confirm your order shortly.</p>
+            <div class="text-center mb-8">
+                <h2 class="text-2xl font-bold text-gray-900">Place an Order</h2>
+                <p class="text-gray-500 mt-2 text-sm">Fill this in and we'll confirm your order shortly.</p>
             </div>
 
-            <form class="bg-white rounded-3xl p-8 shadow-2xl" action="#" method="POST">
+            <form class="bg-gray-50 border border-gray-200 rounded-2xl p-7" action="#" method="POST">
                 @csrf
-                <div class="flex flex-col gap-5">
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                <div class="flex flex-col gap-4">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         <div>
-                            <label for="reg-fname" class="block text-sm font-medium text-gray-700 mb-1.5">First Name</label>
+                            <label for="reg-fname" class="block text-sm font-medium text-gray-700 mb-1">First Name</label>
                             <input id="reg-fname" type="text" name="first_name" required placeholder="Juan"
-                                class="w-full border border-gray-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-orange-400 focus:border-transparent transition" />
+                                class="w-full border border-gray-300 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-orange-400 focus:border-transparent transition bg-white" />
                         </div>
                         <div>
-                            <label for="reg-lname" class="block text-sm font-medium text-gray-700 mb-1.5">Last Name</label>
+                            <label for="reg-lname" class="block text-sm font-medium text-gray-700 mb-1">Last Name</label>
                             <input id="reg-lname" type="text" name="last_name" required placeholder="dela Cruz"
-                                class="w-full border border-gray-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-orange-400 focus:border-transparent transition" />
+                                class="w-full border border-gray-300 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-orange-400 focus:border-transparent transition bg-white" />
                         </div>
                     </div>
                     <div>
-                        <label for="reg-phone" class="block text-sm font-medium text-gray-700 mb-1.5">Phone Number</label>
+                        <label for="reg-phone" class="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
                         <input id="reg-phone" type="tel" name="phone" required placeholder="09XX XXX XXXX"
-                            class="w-full border border-gray-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-orange-400 focus:border-transparent transition" />
+                            class="w-full border border-gray-300 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-orange-400 focus:border-transparent transition bg-white" />
                     </div>
                     <div>
-                        <label for="reg-address" class="block text-sm font-medium text-gray-700 mb-1.5">Delivery Address</label>
+                        <label for="reg-address" class="block text-sm font-medium text-gray-700 mb-1">Delivery Address</label>
                         <input id="reg-address" type="text" name="address" required placeholder="House no., Street, Barangay, City"
-                            class="w-full border border-gray-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-orange-400 focus:border-transparent transition" />
+                            class="w-full border border-gray-300 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-orange-400 focus:border-transparent transition bg-white" />
                     </div>
                     <div>
-                        <label for="reg-product" class="block text-sm font-medium text-gray-700 mb-1.5">Product</label>
+                        <label for="reg-product" class="block text-sm font-medium text-gray-700 mb-1">What do you need?</label>
                         <select id="reg-product" name="product" required
-                            class="w-full border border-gray-300 rounded-xl px-4 py-3 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-orange-400 focus:border-transparent transition">
+                            class="w-full border border-gray-300 rounded-lg px-4 py-2.5 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-orange-400 focus:border-transparent transition">
                             <option value="" disabled selected>Select a product</option>
                             <optgroup label="LPG Tanks">
                                 <option value="11kg">11 kg LPG Tank – ₱580</option>
@@ -459,16 +340,17 @@
                         </select>
                     </div>
                     <div>
-                        <label for="reg-notes" class="block text-sm font-medium text-gray-700 mb-1.5">Notes <span class="text-gray-400">(optional)</span></label>
+                        <label for="reg-notes" class="block text-sm font-medium text-gray-700 mb-1">Anything else? <span class="text-gray-400 font-normal">(optional)</span></label>
                         <textarea id="reg-notes" name="notes" rows="3"
-                            placeholder="Preferred delivery time, special instructions, etc."
-                            class="w-full border border-gray-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-orange-400 focus:border-transparent transition resize-none"></textarea>
+                            placeholder="Preferred delivery time, notes, etc."
+                            class="w-full border border-gray-300 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-orange-400 focus:border-transparent transition resize-none bg-white"></textarea>
                     </div>
-                    <x-button type="submit" variant="primary" size="lg" class="w-full justify-center">
+                    <button type="submit"
+                        class="w-full bg-orange-500 hover:bg-orange-600 text-white font-bold text-base py-3 rounded-lg transition-colors">
                         Submit Order
-                    </x-button>
+                    </button>
                     <p class="text-center text-xs text-gray-400">
-                        Prefer to call?
+                        Rather call?
                         <a href="tel:+639353558958" class="text-orange-500 hover:underline font-medium">0935-355-8958</a>
                     </p>
                 </div>
