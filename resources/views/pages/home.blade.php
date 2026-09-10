@@ -121,37 +121,44 @@
                 @endforeach
             </div>
 
-            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-5">
-                <x-pricing-card name="11 kg LPG Tank"          price="₱580"   tag="Home Use"    cta-href="#get-started"
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-5 [&>*:last-child:nth-child(5n-1)]:col-start-2 xl:[&>*:last-child:nth-child(5n-4)]:col-start-2">
+                <x-pricing-card name="11 kg LPG Tank"          price="₱1,100"   tag="Home Use"    cta-href="#get-started"
+                    :image="Vite::asset('resources/images/11 kg lpg.jpg')"
                     description="Perfect for small households. Lightweight, easy to carry, and fits standard stove regulators. Ideal for 1–3 person homes with moderate cooking use." />
-                <x-pricing-card name="22 kg LPG Tank"          price="₱1,050" tag="Best Seller"  cta-href="#get-started"
+                <x-pricing-card name="22 kg LPG Tank"          price="₱2,204" tag="Best Seller"  cta-href="#get-started"
+                    :image="Vite::asset('resources/images/22 kg lpg.jpg')"
                     description="Our most popular size. Great for medium-sized families, small restaurants, and carinderias. Lasts longer between refills and saves you more per kilo." />
-                <x-pricing-card name="50 kg LPG Tank"          price="₱2,300" tag="Commercial"   cta-href="#get-started"
+                <x-pricing-card name="50 kg LPG Tank"          price="₱4,600" tag="Commercial"   cta-href="#get-started"
+                    :image="Vite::asset('resources/images/50kg.jpg')"
                     description="Built for heavy commercial use — restaurants, bakeries, and food businesses with high daily gas consumption. Reduces how often you need to reorder." />
                 <x-pricing-card name="2.7 kg Portable Tank"    price="₱380"                      cta-href="#get-started"
+                    :image="Vite::asset('resources/images/2.7kg.jpg')"
                     description="Compact and travel-friendly. Great for camping, small stalls, or as a backup tank at home. Works with standard portable stove connectors." />
-                <x-pricing-card name="100 kg Bulk Tank"        price="₱4,800" tag="Industrial"   cta-href="#get-started"
-                    description="For large-scale industrial and commercial operations. Contact us for bulk pricing and scheduled delivery arrangements." />
                 <x-pricing-card name="Standard Regulator"      price="₱120"                      cta-href="#get-started"
+                    :image="Vite::asset('resources/images/Regulator.jpg')"
                     description="Compatible with most household LPG tanks and stoves. Regulates gas pressure for safe and consistent flow. Replacement or spare unit." />
                 <x-pricing-card name="High-Pressure Regulator" price="₱280"                      cta-href="#get-started"
+                    :image="Vite::asset('resources/images/High pressure regulator.jpg')"
                     description="For commercial burners and equipment that require higher gas pressure. More durable build, suitable for heavy daily use." />
                 <x-pricing-card name="Dual-Stage Regulator"    price="₱350"                      cta-href="#get-started"
+                    :image="Vite::asset('resources/images/Dual stage regulator.jpg')"
                     description="Two-stage pressure reduction for more consistent gas flow. Good choice for businesses that need steady pressure throughout the day." />
                 <x-pricing-card name="LPG Rubber Hose (1m)"   price="₱95"                       cta-href="#get-started"
+                    :image="Vite::asset('resources/images/1m hose.jpg')"
                     description="1-meter LPG-grade rubber hose. Connects your tank regulator to your stove or burner. Heat-resistant and pressure-tested." />
                 <x-pricing-card name="LPG Rubber Hose (2m)"   price="₱160"                      cta-href="#get-started"
+                    :image="Vite::asset('resources/images/2m.jpg')"
                     description="2-meter LPG-grade rubber hose. Useful when your stove is farther from the tank. Heat-resistant and pressure-tested." />
                 <x-pricing-card name="Hose Clamp Set"          price="₱45"                       cta-href="#get-started"
+                    :image="Vite::asset('resources/images/hose clamp.jpg')"
                     description="Secure your LPG hose connections tightly. Prevents gas leaks at the joints. Fits standard hose diameters. Sold as a set of two clamps." />
-                <x-pricing-card name="Quick-Connect Fitting"   price="₱75"                       cta-href="#get-started"
+                {{-- Last row: 2 items — centred with col-start --}}
+                <x-pricing-card class="xl:col-start-2" name="Quick-Connect Fitting" price="₱75" cta-href="#get-started"
+                    :image="Vite::asset('resources/images/quick connect.jpg')"
                     description="Makes connecting and disconnecting your LPG hose faster and safer. No tools needed. Compatible with standard tank and stove connectors." />
-                <x-pricing-card name="Gas Leak Detector"       price="₱220"   tag="Safety"       cta-href="#get-started"
-                    description="Battery-operated gas leak detector. Place near your tank or stove and it will alert you with a beep if it detects LPG in the air. Simple safety device every home should have." />
                 <x-pricing-card name="LPG Safety Cap"          price="₱35"                       cta-href="#get-started"
+                    :image="Vite::asset('resources/images/safety cap.jpg')"
                     description="Protective cap that covers the tank valve when not in use. Prevents accidental gas release and keeps dust and debris out of the valve." />
-                <x-pricing-card name="Tank Trolley / Cart"     price="₱450"                      cta-href="#get-started"
-                    description="Metal rolling trolley for moving heavy LPG tanks without lifting. Fits 22 kg and 50 kg cylinders. Useful for restaurants and households with limited mobility." />
             </div>
 
             <p class="text-center text-sm text-gray-400 mt-10">
@@ -171,27 +178,27 @@
                 <p class="text-gray-500 mt-3">Located at Brgy. San Isidro, Pagsanjan, Laguna. Drop by or call ahead for pickup.</p>
             </div>
 
-            {{-- Photo grid --}}
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
-                <div class="rounded-2xl overflow-hidden shadow-sm col-span-2 row-span-2">
+            {{-- Photo grid — natural aspect ratio, no cropping --}}
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-12">
+                <div class="rounded-2xl overflow-hidden shadow-sm">
                     <img src="{{ Vite::asset('resources/images/Stacked.jpg') }}"
                          alt="LPG tanks stacked at RonAyin store"
-                         class="w-full h-full object-cover" style="min-height: 280px;" />
+                         class="w-full h-auto" />
                 </div>
                 <div class="rounded-2xl overflow-hidden shadow-sm">
                     <img src="{{ Vite::asset('resources/images/Stacked 2.jpg') }}"
                          alt="LPG tanks available at RonAyin store"
-                         class="w-full h-48 object-cover" />
+                         class="w-full h-auto" />
                 </div>
                 <div class="rounded-2xl overflow-hidden shadow-sm">
                     <img src="{{ Vite::asset('resources/images/140660599_112675307448584_3543176545709897582_n.jpg') }}"
                          alt="RonAyin LPG Store"
-                         class="w-full h-48 object-cover" />
+                         class="w-full h-auto" />
                 </div>
-                <div class="rounded-2xl overflow-hidden shadow-sm col-span-2">
+                <div class="rounded-2xl overflow-hidden shadow-sm">
                     <img src="{{ Vite::asset('resources/images/486840628_1137077201765590_573406302113235066_n.jpg') }}"
                          alt="RonAyin LPG Store products"
-                         class="w-full h-48 object-cover" />
+                         class="w-full h-auto" />
                 </div>
             </div>
 
@@ -374,11 +381,10 @@
                             class="w-full border border-gray-300 rounded-lg px-4 py-2.5 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-orange-400 focus:border-transparent transition">
                             <option value="" disabled selected>Select a product</option>
                             <optgroup label="LPG Tanks">
-                                <option value="11kg">11 kg LPG Tank – ₱580</option>
-                                <option value="22kg">22 kg LPG Tank – ₱1,050</option>
-                                <option value="50kg">50 kg LPG Tank – ₱2,300</option>
+                                <option value="11kg">11 kg LPG Tank – ₱1,100</option>
+                                <option value="22kg">22 kg LPG Tank – ₱2,204</option>
+                                <option value="50kg">50 kg LPG Tank – ₱4,600</option>
                                 <option value="2.7kg">2.7 kg Portable Tank – ₱380</option>
-                                <option value="100kg">100 kg Bulk Tank – ₱4,800</option>
                             </optgroup>
                             <optgroup label="Regulators">
                                 <option value="std-reg">Standard Regulator – ₱120</option>
@@ -392,9 +398,7 @@
                                 <option value="fitting">Quick-Connect Fitting – ₱75</option>
                             </optgroup>
                             <optgroup label="Accessories">
-                                <option value="detector">Gas Leak Detector – ₱220</option>
                                 <option value="cap">LPG Safety Cap – ₱35</option>
-                                <option value="trolley">Tank Trolley / Cart – ₱450</option>
                             </optgroup>
                         </select>
                     </div>

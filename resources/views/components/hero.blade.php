@@ -79,11 +79,9 @@
 
                     {{-- Store info from the banner in the photo --}}
                     <div class="flex items-center gap-3 mb-6">
-                        <div class="w-12 h-12 bg-orange-500 rounded-2xl flex items-center justify-center shadow-md shrink-0">
-                            <svg class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                                <path fill-rule="evenodd" d="M12.963 2.286a.75.75 0 0 0-1.071-.136 9.742 9.742 0 0 0-3.539 6.176 7.547 7.547 0 0 1-1.705-1.715.75.75 0 0 0-1.152-.082A9 9 0 1 0 15.68 4.534a7.46 7.46 0 0 1-2.717-2.248ZM15.75 14.25a3.75 3.75 0 1 1-7.313-1.172c.628.465 1.35.81 2.133 1a5.99 5.99 0 0 1 1.925-3.546 3.75 3.75 0 0 1 3.255 3.718Z" clip-rule="evenodd" />
-                            </svg>
-                        </div>
+                        <img src="{{ Vite::asset("resources/images/RonAyin's LPG Store Logo.png") }}"
+                             alt="RonAyin LPG Store Logo"
+                             class="w-12 h-12 rounded-2xl object-cover shadow-md shrink-0" />
                         <div>
                             <p class="text-white font-bold text-base leading-tight">RonAyin's LPG Store</p>
                             <p class="text-gray-300 text-xs mt-0.5">Brgy. San Isidro Pagsanjan, Laguna</p>
