@@ -369,32 +369,7 @@ week05-product-landing-page/
 
 ## 9. Screenshots
 
-> Place all screenshots in the `screenshots/` folder.
-> Place before/after comparison images in the `documentation/` folder.
-
-### Required Screenshots
-
-| Screenshot | File |
-|-----------|------|
-| Desktop View (1280px+) | `screenshots/desktop.png` |
-| Tablet View (768px) | `screenshots/tablet.png` |
-| Mobile View (375px) | `screenshots/mobile.png` |
-| Navigation Bar | `screenshots/navbar.png` |
-| Hero Section | `screenshots/hero.png` |
-| Features Section | `screenshots/features.png` |
-| Products Section | `screenshots/products.png` |
-| Testimonials | `screenshots/testimonials.png` |
-| Footer | `screenshots/footer.png` |
-| Blade Components Folder | `screenshots/components-folder.png` |
-| GitHub Repository | `screenshots/github-repo.png` |
-| VS Code Project Structure | `screenshots/vscode-structure.png` |
-
-### Before / After Comparison
-
-| | File |
-|--|------|
-| Before (initial layout) | `documentation/before.png` |
-| After (final polished page) | `documentation/after.png` |
+Can be found at the [Screenshots Folder](https://github.com/Benjamin-2804/week05-product-landing-page/tree/main/screenshots)
 
 ---
 
@@ -428,3 +403,7 @@ The palette uses analogous warm tones (orange → amber) with a neutral gray sca
 🔗 [https://github.com/Benjamin-2804/week05-product-landing-page](https://github.com/Benjamin-2804/week05-product-landing-page)
 
 ---
+
+## LinkedIn Post
+
+https://www.linkedin.com/feed/update/urn:li:activity:7503832359390236672/
