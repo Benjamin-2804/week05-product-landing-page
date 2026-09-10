@@ -7,9 +7,13 @@
     'ctaHref'     => '#get-started',
 ])
 
-{{-- Card — clicking anywhere opens the modal --}}
+@php
+    $category = $attributes->get('data-category', 'All');
+@endphp
+
 <div
-    class="group flex flex-col bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 cursor-pointer"
+    data-category="{{ $category }}"
+    class="product-card group flex flex-col bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 cursor-pointer"
     onclick="openProductModal({{ json_encode($name) }}, {{ json_encode($price) }}, {{ json_encode($image) }}, {{ json_encode($description) }}, {{ json_encode($tag) }}, {{ json_encode($ctaHref) }})"
     role="button"
     tabindex="0"

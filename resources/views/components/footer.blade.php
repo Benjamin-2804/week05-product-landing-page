@@ -19,7 +19,11 @@
                 <ul class="flex flex-col gap-3 text-sm mb-6">
                     <li class="flex items-center gap-3">
                         <span class="text-orange-400 text-base shrink-0" aria-hidden="true">📞</span>
-                        <a href="tel:+639001234567" class="hover:text-orange-400 transition-colors">+63 900 123 4567</a>
+                        <a href="tel:+639353558958" class="hover:text-orange-400 transition-colors">0935-355-8958</a>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <span class="text-orange-400 text-base shrink-0" aria-hidden="true">📞</span>
+                        <a href="tel:+639973279175" class="hover:text-orange-400 transition-colors">0997-327-9175</a>
                     </li>
                     <li class="flex items-center gap-3">
                         <span class="text-orange-400 text-base shrink-0" aria-hidden="true">✉️</span>
@@ -27,7 +31,7 @@
                     </li>
                     <li class="flex items-start gap-3">
                         <span class="text-orange-400 text-base shrink-0 mt-0.5" aria-hidden="true">📍</span>
-                        <span>123 Gas Street, Barangay Maliwanag, Manila, Philippines</span>
+                        <span>7FH4+9Q3, San Isidro, Pagsanjan, Laguna</span>
                     </li>
                 </ul>
 

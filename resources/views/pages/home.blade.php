@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'RonAyin LPG Store – Safe & Reliable Gas Delivery')
+@section('title', 'RonAyin LPG Store  ESafe & Reliable Gas Delivery')
 @section('description', 'RonAyin LPG Store delivers safe, DOE-certified liquefied petroleum gas to homes and businesses. Order online or call us for same-day delivery.')
 
 @section('content')
@@ -9,7 +9,7 @@
     <x-hero
         product-name="RonAyin LPG Store"
         headline='Your Trusted<br /><span class="text-orange-500">LPG Partner</span>'
-        description="Safe, certified, and affordable liquefied petroleum gas delivered straight to your home or business — fast, hassle-free, every time."
+        description="Safe, certified, and affordable liquefied petroleum gas delivered straight to your home or business  Efast, hassle-free, every time."
         :primary-cta="['label' => 'Shop Products', 'href' => '#products']"
         :secondary-cta="['label' => 'Contact Us',   'href' => '#contact']"
     />
@@ -51,7 +51,7 @@
 
                 <x-feature-card
                     title="Always Available"
-                    description="Call or text us anytime. We're a family business — there's always someone ready to take your order."
+                    description="Call or text us anytime. We're a family business  Ethere's always someone ready to take your order."
                 >
                     <x-slot:icon>
                         <svg class="w-7 h-7 text-orange-500" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
@@ -73,7 +73,7 @@
 
                 <x-feature-card
                     title="Honest Prices"
-                    description="No hidden charges, no surprises. What you see is what you pay — always."
+                    description="No hidden charges, no surprises. What you see is what you pay  Ealways."
                 >
                     <x-slot:icon>
                         <svg class="w-7 h-7 text-orange-500" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
@@ -86,7 +86,7 @@
 
                 <x-feature-card
                     title="Multiple Brands"
-                    description="We carry Petron, Regasco, Solane, and LM Gas — so you can stick with the brand you trust."
+                    description="We carry Petron, Regasco, Solane, and LM Gas  Eso you can stick with the brand you trust."
                 >
                     <x-slot:icon>
                         <svg class="w-7 h-7 text-orange-500" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
@@ -105,65 +105,70 @@
 
             <div class="text-center mb-10">
                 <h2 class="text-2xl sm:text-3xl font-bold text-gray-900">Products & Parts</h2>
-                <p class="text-gray-500 mt-3">Tanks, regulators, hoses, and more. Photos coming soon for each item.</p>
+                <p class="text-gray-500 mt-3">Tanks, regulators, hoses, and more. Click any item to view details.</p>
             </div>
 
-            {{-- Category tabs --}}
-            <div class="flex flex-wrap gap-2 justify-center mb-10">
+            {{-- Category filter tabs --}}
+            <div class="flex flex-wrap gap-2 justify-center mb-10" id="category-filters">
                 @foreach (['All', 'LPG Tanks', 'Regulators', 'Hoses & Fittings', 'Accessories'] as $cat)
-                    <button type="button"
+                    <button
+                        type="button"
+                        data-filter="{{ $cat }}"
+                        onclick="filterProducts(this)"
                         class="text-sm font-medium px-4 py-2 rounded-full border transition-colors
                                {{ $loop->first
                                     ? 'bg-orange-500 text-white border-orange-500'
-                                    : 'bg-white text-gray-600 border-gray-200 hover:border-orange-300 hover:text-orange-500' }}">
+                                    : 'bg-white text-gray-600 border-gray-200 hover:border-orange-300 hover:text-orange-500' }}"
+                    >
                         {{ $cat }}
                     </button>
                 @endforeach
             </div>
 
-            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-5 [&>*:last-child:nth-child(5n-1)]:col-start-2 xl:[&>*:last-child:nth-child(5n-4)]:col-start-2">
-                <x-pricing-card name="11 kg LPG Tank"          price="₱1,100"   tag="Home Use"    cta-href="#get-started"
+            {{-- Product grid --}}
+            <div id="product-grid" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-5">
+                <x-pricing-card data-category="LPG Tanks"       name="11 kg LPG Tank"          price="₱1,100"   tag="Home Use"    cta-href="#get-started"
                     :image="Vite::asset('resources/images/11 kg lpg.jpg')"
-                    description="Perfect for small households. Lightweight, easy to carry, and fits standard stove regulators. Ideal for 1–3 person homes with moderate cooking use." />
-                <x-pricing-card name="22 kg LPG Tank"          price="₱2,204" tag="Best Seller"  cta-href="#get-started"
+                    description="Perfect for small households. Lightweight, easy to carry, and fits standard stove regulators. Ideal for 1 E person homes with moderate cooking use." />
+                <x-pricing-card data-category="LPG Tanks"       name="22 kg LPG Tank"          price="₱2,204"   tag="Best Seller"  cta-href="#get-started"
                     :image="Vite::asset('resources/images/22 kg lpg.jpg')"
                     description="Our most popular size. Great for medium-sized families, small restaurants, and carinderias. Lasts longer between refills and saves you more per kilo." />
-                <x-pricing-card name="50 kg LPG Tank"          price="₱4,600" tag="Commercial"   cta-href="#get-started"
+                <x-pricing-card data-category="LPG Tanks"       name="50 kg LPG Tank"          price="₱4,600"   tag="Commercial"   cta-href="#get-started"
                     :image="Vite::asset('resources/images/50kg.jpg')"
-                    description="Built for heavy commercial use — restaurants, bakeries, and food businesses with high daily gas consumption. Reduces how often you need to reorder." />
-                <x-pricing-card name="2.7 kg Portable Tank"    price="₱380"                      cta-href="#get-started"
+                    description="Built for heavy commercial use  Erestaurants, bakeries, and food businesses with high daily gas consumption. Reduces how often you need to reorder." />
+                <x-pricing-card data-category="LPG Tanks"       name="2.7 kg Portable Tank"    price="₱380"                        cta-href="#get-started"
                     :image="Vite::asset('resources/images/2.7kg.jpg')"
                     description="Compact and travel-friendly. Great for camping, small stalls, or as a backup tank at home. Works with standard portable stove connectors." />
-                <x-pricing-card name="Standard Regulator"      price="₱120"                      cta-href="#get-started"
+                <x-pricing-card data-category="Regulators"      name="Standard Regulator"      price="₱120"                        cta-href="#get-started"
                     :image="Vite::asset('resources/images/Regulator.jpg')"
                     description="Compatible with most household LPG tanks and stoves. Regulates gas pressure for safe and consistent flow. Replacement or spare unit." />
-                <x-pricing-card name="High-Pressure Regulator" price="₱280"                      cta-href="#get-started"
+                <x-pricing-card data-category="Regulators"      name="High-Pressure Regulator" price="₱280"                        cta-href="#get-started"
                     :image="Vite::asset('resources/images/High pressure regulator.jpg')"
                     description="For commercial burners and equipment that require higher gas pressure. More durable build, suitable for heavy daily use." />
-                <x-pricing-card name="Dual-Stage Regulator"    price="₱350"                      cta-href="#get-started"
+                <x-pricing-card data-category="Regulators"      name="Dual-Stage Regulator"    price="₱350"                        cta-href="#get-started"
                     :image="Vite::asset('resources/images/Dual stage regulator.jpg')"
                     description="Two-stage pressure reduction for more consistent gas flow. Good choice for businesses that need steady pressure throughout the day." />
-                <x-pricing-card name="LPG Rubber Hose (1m)"   price="₱95"                       cta-href="#get-started"
+                <x-pricing-card data-category="Hoses & Fittings" name="LPG Rubber Hose (1m)"  price="₱95"                         cta-href="#get-started"
                     :image="Vite::asset('resources/images/1m hose.jpg')"
                     description="1-meter LPG-grade rubber hose. Connects your tank regulator to your stove or burner. Heat-resistant and pressure-tested." />
-                <x-pricing-card name="LPG Rubber Hose (2m)"   price="₱160"                      cta-href="#get-started"
+                <x-pricing-card data-category="Hoses & Fittings" name="LPG Rubber Hose (2m)"  price="₱160"                        cta-href="#get-started"
                     :image="Vite::asset('resources/images/2m.jpg')"
                     description="2-meter LPG-grade rubber hose. Useful when your stove is farther from the tank. Heat-resistant and pressure-tested." />
-                <x-pricing-card name="Hose Clamp Set"          price="₱45"                       cta-href="#get-started"
+                <x-pricing-card data-category="Hoses & Fittings" name="Hose Clamp Set"         price="₱45"                         cta-href="#get-started"
                     :image="Vite::asset('resources/images/hose clamp.jpg')"
                     description="Secure your LPG hose connections tightly. Prevents gas leaks at the joints. Fits standard hose diameters. Sold as a set of two clamps." />
-                {{-- Last row: 2 items — centred with col-start --}}
-                <x-pricing-card class="xl:col-start-2" name="Quick-Connect Fitting" price="₱75" cta-href="#get-started"
+                {{-- Last row: 2 items  Ecentred with col-start --}}
+                <x-pricing-card data-category="Hoses & Fittings" class="xl:col-start-2" name="Quick-Connect Fitting" price="₱75"  cta-href="#get-started"
                     :image="Vite::asset('resources/images/quick connect.jpg')"
                     description="Makes connecting and disconnecting your LPG hose faster and safer. No tools needed. Compatible with standard tank and stove connectors." />
-                <x-pricing-card name="LPG Safety Cap"          price="₱35"                       cta-href="#get-started"
+                <x-pricing-card data-category="Accessories"     name="LPG Safety Cap"          price="₱35"                         cta-href="#get-started"
                     :image="Vite::asset('resources/images/safety cap.jpg')"
                     description="Protective cap that covers the tank valve when not in use. Prevents accidental gas release and keeps dust and debris out of the valve." />
             </div>
 
             <p class="text-center text-sm text-gray-400 mt-10">
                 Need something not on the list?
-                <a href="#contact" class="text-orange-500 hover:underline font-medium ml-1">Message us →</a>
+                <a href="#contact" class="text-orange-500 hover:underline font-medium ml-1">Message us ↁE/a>
             </p>
 
         </div>
@@ -178,7 +183,7 @@
                 <p class="text-gray-500 mt-3">Located at Brgy. San Isidro, Pagsanjan, Laguna. Drop by or call ahead for pickup.</p>
             </div>
 
-            {{-- Photo grid — natural aspect ratio, no cropping --}}
+            {{-- Photo grid  Enatural aspect ratio, no cropping --}}
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-12">
                 <div class="rounded-2xl overflow-hidden shadow-sm">
                     <img src="{{ Vite::asset('resources/images/Stacked.jpg') }}"
@@ -232,7 +237,7 @@
                     <div class="rounded-2xl overflow-hidden shadow-sm border border-gray-200 flex-1">
                         <iframe
                             title="RonAyin LPG Store location"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3869.6!2d121.4616!3d14.2743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTTCsDE2JzI3LjUiTiAxMjHCsDI3JzQxLjgiRQ!5e0!3m2!1sen!2sph!4v1699999999!5m2!1sen!2sph&q=Brgy.+San+Isidro+Pagsanjan+Laguna+Philippines"
+                            src="https://maps.google.com/maps?q=7FH4%2B9Q3+San+Isidro+Pagsanjan+Laguna+Philippines&output=embed"
                             width="100%"
                             height="280"
                             style="border:0;"
@@ -243,7 +248,7 @@
                         ></iframe>
                     </div>
                     <a
-                        href="https://www.google.com/maps/search/Brgy.+San+Isidro+Pagsanjan+Laguna+Philippines"
+                        href="https://maps.google.com/?q=7FH4%2B9Q3+San+Isidro+Pagsanjan+Laguna+Philippines"
                         target="_blank"
                         rel="noopener noreferrer"
                         class="flex items-center justify-center gap-2 bg-gray-50 hover:bg-orange-50 border border-gray-200 hover:border-orange-300 text-gray-700 hover:text-orange-500 font-semibold text-sm py-3 rounded-xl transition-colors"
@@ -381,24 +386,24 @@
                             class="w-full border border-gray-300 rounded-lg px-4 py-2.5 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-orange-400 focus:border-transparent transition">
                             <option value="" disabled selected>Select a product</option>
                             <optgroup label="LPG Tanks">
-                                <option value="11kg">11 kg LPG Tank – ₱1,100</option>
-                                <option value="22kg">22 kg LPG Tank – ₱2,204</option>
-                                <option value="50kg">50 kg LPG Tank – ₱4,600</option>
-                                <option value="2.7kg">2.7 kg Portable Tank – ₱380</option>
+                                <option value="11kg">11 kg LPG Tank  E₱1,100</option>
+                                <option value="22kg">22 kg LPG Tank  E₱2,204</option>
+                                <option value="50kg">50 kg LPG Tank  E₱4,600</option>
+                                <option value="2.7kg">2.7 kg Portable Tank  E₱380</option>
                             </optgroup>
                             <optgroup label="Regulators">
-                                <option value="std-reg">Standard Regulator – ₱120</option>
-                                <option value="hp-reg">High-Pressure Regulator – ₱280</option>
-                                <option value="ds-reg">Dual-Stage Regulator – ₱350</option>
+                                <option value="std-reg">Standard Regulator  E₱120</option>
+                                <option value="hp-reg">High-Pressure Regulator  E₱280</option>
+                                <option value="ds-reg">Dual-Stage Regulator  E₱350</option>
                             </optgroup>
                             <optgroup label="Hoses & Fittings">
-                                <option value="hose-1m">LPG Rubber Hose 1m – ₱95</option>
-                                <option value="hose-2m">LPG Rubber Hose 2m – ₱160</option>
-                                <option value="clamp">Hose Clamp Set – ₱45</option>
-                                <option value="fitting">Quick-Connect Fitting – ₱75</option>
+                                <option value="hose-1m">LPG Rubber Hose 1m  E₱95</option>
+                                <option value="hose-2m">LPG Rubber Hose 2m  E₱160</option>
+                                <option value="clamp">Hose Clamp Set  E₱45</option>
+                                <option value="fitting">Quick-Connect Fitting  E₱75</option>
                             </optgroup>
                             <optgroup label="Accessories">
-                                <option value="cap">LPG Safety Cap – ₱35</option>
+                                <option value="cap">LPG Safety Cap  E₱35</option>
                             </optgroup>
                         </select>
                     </div>

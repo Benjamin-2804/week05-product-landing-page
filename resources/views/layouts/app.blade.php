@@ -81,19 +81,30 @@
         </div>
 
         <script>
+            // ── Category filter ──────────────────────────────────────────
+            function filterProducts(btn) {
+                const filter = btn.dataset.filter;
+                document.querySelectorAll('#category-filters button').forEach(b => {
+                    b.classList.remove('bg-orange-500', 'text-white', 'border-orange-500');
+                    b.classList.add('bg-white', 'text-gray-600', 'border-gray-200');
+                });
+                btn.classList.add('bg-orange-500', 'text-white', 'border-orange-500');
+                btn.classList.remove('bg-white', 'text-gray-600', 'border-gray-200');
+                document.querySelectorAll('#product-grid .product-card').forEach(card => {
+                    const visible = filter === 'All' || card.dataset.category === filter;
+                    card.style.display = visible ? '' : 'none';
+                });
+            }
+
+            // ── Product modal ─────────────────────────────────────────────
             function openProductModal(name, price, image, description, tag, ctaHref) {
                 const modal = document.getElementById('product-modal');
-
                 document.getElementById('modal-title').textContent       = name;
                 document.getElementById('modal-price').textContent       = price;
                 document.getElementById('modal-description').textContent = description || 'Contact us for more information about this product.';
-
-                // Tag
                 const tagEl = document.getElementById('modal-tag');
                 if (tag) { tagEl.textContent = tag; tagEl.classList.remove('hidden'); }
                 else      { tagEl.classList.add('hidden'); }
-
-                // Image
                 const img         = document.getElementById('modal-img');
                 const placeholder = document.getElementById('modal-img-placeholder');
                 if (image) {
@@ -104,11 +115,8 @@
                     img.classList.add('hidden');
                     placeholder.classList.remove('hidden');
                 }
-
-                // CTA href
-                const btn = document.getElementById('modal-order-btn');
-                if (ctaHref) { btn.href = ctaHref; }
-
+                const orderBtn = document.getElementById('modal-order-btn');
+                if (ctaHref) { orderBtn.href = ctaHref; }
                 modal.classList.remove('hidden');
                 modal.classList.add('flex');
                 document.body.style.overflow = 'hidden';
@@ -121,10 +129,11 @@
                 document.body.style.overflow = '';
             }
 
-            // Close on Escape key
             document.addEventListener('keydown', e => {
                 if (e.key === 'Escape') closeProductModal();
             });
+        </script>
+
         </script>
 
     </body>
