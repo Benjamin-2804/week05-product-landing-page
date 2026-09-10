@@ -122,21 +122,36 @@
             </div>
 
             <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-5">
-                <x-pricing-card name="11 kg LPG Tank"          price="₱580"   tag="Home Use"    cta-href="#get-started" />
-                <x-pricing-card name="22 kg LPG Tank"          price="₱1,050" tag="Best Seller"  cta-href="#get-started" />
-                <x-pricing-card name="50 kg LPG Tank"          price="₱2,300" tag="Commercial"   cta-href="#get-started" />
-                <x-pricing-card name="2.7 kg Portable Tank"    price="₱380"                      cta-href="#get-started" />
-                <x-pricing-card name="100 kg Bulk Tank"        price="₱4,800" tag="Industrial"   cta-href="#get-started" />
-                <x-pricing-card name="Standard Regulator"      price="₱120"                      cta-href="#get-started" />
-                <x-pricing-card name="High-Pressure Regulator" price="₱280"                      cta-href="#get-started" />
-                <x-pricing-card name="Dual-Stage Regulator"    price="₱350"                      cta-href="#get-started" />
-                <x-pricing-card name="LPG Rubber Hose (1m)"   price="₱95"                       cta-href="#get-started" />
-                <x-pricing-card name="LPG Rubber Hose (2m)"   price="₱160"                      cta-href="#get-started" />
-                <x-pricing-card name="Hose Clamp Set"          price="₱45"                       cta-href="#get-started" />
-                <x-pricing-card name="Quick-Connect Fitting"   price="₱75"                       cta-href="#get-started" />
-                <x-pricing-card name="Gas Leak Detector"       price="₱220"   tag="Safety"       cta-href="#get-started" />
-                <x-pricing-card name="LPG Safety Cap"          price="₱35"                       cta-href="#get-started" />
-                <x-pricing-card name="Tank Trolley / Cart"     price="₱450"                      cta-href="#get-started" />
+                <x-pricing-card name="11 kg LPG Tank"          price="₱580"   tag="Home Use"    cta-href="#get-started"
+                    description="Perfect for small households. Lightweight, easy to carry, and fits standard stove regulators. Ideal for 1–3 person homes with moderate cooking use." />
+                <x-pricing-card name="22 kg LPG Tank"          price="₱1,050" tag="Best Seller"  cta-href="#get-started"
+                    description="Our most popular size. Great for medium-sized families, small restaurants, and carinderias. Lasts longer between refills and saves you more per kilo." />
+                <x-pricing-card name="50 kg LPG Tank"          price="₱2,300" tag="Commercial"   cta-href="#get-started"
+                    description="Built for heavy commercial use — restaurants, bakeries, and food businesses with high daily gas consumption. Reduces how often you need to reorder." />
+                <x-pricing-card name="2.7 kg Portable Tank"    price="₱380"                      cta-href="#get-started"
+                    description="Compact and travel-friendly. Great for camping, small stalls, or as a backup tank at home. Works with standard portable stove connectors." />
+                <x-pricing-card name="100 kg Bulk Tank"        price="₱4,800" tag="Industrial"   cta-href="#get-started"
+                    description="For large-scale industrial and commercial operations. Contact us for bulk pricing and scheduled delivery arrangements." />
+                <x-pricing-card name="Standard Regulator"      price="₱120"                      cta-href="#get-started"
+                    description="Compatible with most household LPG tanks and stoves. Regulates gas pressure for safe and consistent flow. Replacement or spare unit." />
+                <x-pricing-card name="High-Pressure Regulator" price="₱280"                      cta-href="#get-started"
+                    description="For commercial burners and equipment that require higher gas pressure. More durable build, suitable for heavy daily use." />
+                <x-pricing-card name="Dual-Stage Regulator"    price="₱350"                      cta-href="#get-started"
+                    description="Two-stage pressure reduction for more consistent gas flow. Good choice for businesses that need steady pressure throughout the day." />
+                <x-pricing-card name="LPG Rubber Hose (1m)"   price="₱95"                       cta-href="#get-started"
+                    description="1-meter LPG-grade rubber hose. Connects your tank regulator to your stove or burner. Heat-resistant and pressure-tested." />
+                <x-pricing-card name="LPG Rubber Hose (2m)"   price="₱160"                      cta-href="#get-started"
+                    description="2-meter LPG-grade rubber hose. Useful when your stove is farther from the tank. Heat-resistant and pressure-tested." />
+                <x-pricing-card name="Hose Clamp Set"          price="₱45"                       cta-href="#get-started"
+                    description="Secure your LPG hose connections tightly. Prevents gas leaks at the joints. Fits standard hose diameters. Sold as a set of two clamps." />
+                <x-pricing-card name="Quick-Connect Fitting"   price="₱75"                       cta-href="#get-started"
+                    description="Makes connecting and disconnecting your LPG hose faster and safer. No tools needed. Compatible with standard tank and stove connectors." />
+                <x-pricing-card name="Gas Leak Detector"       price="₱220"   tag="Safety"       cta-href="#get-started"
+                    description="Battery-operated gas leak detector. Place near your tank or stove and it will alert you with a beep if it detects LPG in the air. Simple safety device every home should have." />
+                <x-pricing-card name="LPG Safety Cap"          price="₱35"                       cta-href="#get-started"
+                    description="Protective cap that covers the tank valve when not in use. Prevents accidental gas release and keeps dust and debris out of the valve." />
+                <x-pricing-card name="Tank Trolley / Cart"     price="₱450"                      cta-href="#get-started"
+                    description="Metal rolling trolley for moving heavy LPG tanks without lifting. Fits 22 kg and 50 kg cylinders. Useful for restaurants and households with limited mobility." />
             </div>
 
             <p class="text-center text-sm text-gray-400 mt-10">
@@ -156,39 +171,83 @@
                 <p class="text-gray-500 mt-3">Located at Brgy. San Isidro, Pagsanjan, Laguna. Drop by or call ahead for pickup.</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-                <div class="rounded-2xl overflow-hidden shadow-md">
+            {{-- Photo grid --}}
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+                <div class="rounded-2xl overflow-hidden shadow-sm col-span-2 row-span-2">
                     <img src="{{ Vite::asset('resources/images/Stacked.jpg') }}"
                          alt="LPG tanks stacked at RonAyin store"
-                         class="w-full h-72 object-cover" />
+                         class="w-full h-full object-cover" style="min-height: 280px;" />
                 </div>
-                <div class="rounded-2xl overflow-hidden shadow-md">
+                <div class="rounded-2xl overflow-hidden shadow-sm">
                     <img src="{{ Vite::asset('resources/images/Stacked 2.jpg') }}"
                          alt="LPG tanks available at RonAyin store"
-                         class="w-full h-72 object-cover" />
+                         class="w-full h-48 object-cover" />
+                </div>
+                <div class="rounded-2xl overflow-hidden shadow-sm">
+                    <img src="{{ Vite::asset('resources/images/140660599_112675307448584_3543176545709897582_n.jpg') }}"
+                         alt="RonAyin LPG Store"
+                         class="w-full h-48 object-cover" />
+                </div>
+                <div class="rounded-2xl overflow-hidden shadow-sm col-span-2">
+                    <img src="{{ Vite::asset('resources/images/486840628_1137077201765590_573406302113235066_n.jpg') }}"
+                         alt="RonAyin LPG Store products"
+                         class="w-full h-48 object-cover" />
                 </div>
             </div>
 
-            {{-- Simple how it works --}}
-            <div class="bg-gray-50 rounded-2xl p-8">
-                <h3 class="text-lg font-bold text-gray-900 mb-6 text-center">How to Order</h3>
-                <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
-                    <div class="flex flex-col items-center gap-3">
-                        <div class="w-12 h-12 bg-orange-500 text-white rounded-full flex items-center justify-center text-xl font-bold">1</div>
-                        <p class="font-semibold text-gray-800 text-sm">Call or Text Us</p>
-                        <p class="text-gray-500 text-sm">0935-355-8958 or 0997-327-9175. Tell us what you need and your address.</p>
-                    </div>
-                    <div class="flex flex-col items-center gap-3">
-                        <div class="w-12 h-12 bg-orange-500 text-white rounded-full flex items-center justify-center text-xl font-bold">2</div>
-                        <p class="font-semibold text-gray-800 text-sm">We Prepare Your Order</p>
-                        <p class="text-gray-500 text-sm">We check stock and get your tank or parts ready. Usually takes just a few minutes.</p>
-                    </div>
-                    <div class="flex flex-col items-center gap-3">
-                        <div class="w-12 h-12 bg-orange-500 text-white rounded-full flex items-center justify-center text-xl font-bold">3</div>
-                        <p class="font-semibold text-gray-800 text-sm">Delivered to Your Door</p>
-                        <p class="text-gray-500 text-sm">We deliver same-day. Our rider checks connections and makes sure everything is safe before leaving.</p>
+            {{-- How it works + Map side by side --}}
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-0">
+
+                {{-- How to order --}}
+                <div class="bg-gray-50 rounded-2xl p-8">
+                    <h3 class="text-lg font-bold text-gray-900 mb-6">How to Order</h3>
+                    <div class="flex flex-col gap-5">
+                        @foreach ([
+                            ['step' => '1', 'title' => 'Call or Text Us',         'body' => '0935-355-8958 or 0997-327-9175. Tell us what you need and your address.'],
+                            ['step' => '2', 'title' => 'We Prepare Your Order',   'body' => 'We check stock and get your tank or parts ready. Usually takes just a few minutes.'],
+                            ['step' => '3', 'title' => 'Delivered to Your Door',  'body' => 'Same-day delivery. Our rider checks connections and makes sure everything is safe before leaving.'],
+                        ] as $s)
+                            <div class="flex items-start gap-4">
+                                <div class="w-9 h-9 bg-orange-500 text-white rounded-full flex items-center justify-center text-sm font-bold shrink-0">
+                                    {{ $s['step'] }}
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-gray-800 text-sm">{{ $s['title'] }}</p>
+                                    <p class="text-gray-500 text-sm mt-0.5">{{ $s['body'] }}</p>
+                                </div>
+                            </div>
+                        @endforeach
                     </div>
                 </div>
+
+                {{-- Map --}}
+                <div class="flex flex-col gap-4">
+                    <div class="rounded-2xl overflow-hidden shadow-sm border border-gray-200 flex-1">
+                        <iframe
+                            title="RonAyin LPG Store location"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3869.6!2d121.4616!3d14.2743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTTCsDE2JzI3LjUiTiAxMjHCsDI3JzQxLjgiRQ!5e0!3m2!1sen!2sph!4v1699999999!5m2!1sen!2sph&q=Brgy.+San+Isidro+Pagsanjan+Laguna+Philippines"
+                            width="100%"
+                            height="280"
+                            style="border:0;"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            class="w-full"
+                        ></iframe>
+                    </div>
+                    <a
+                        href="https://www.google.com/maps/search/Brgy.+San+Isidro+Pagsanjan+Laguna+Philippines"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="flex items-center justify-center gap-2 bg-gray-50 hover:bg-orange-50 border border-gray-200 hover:border-orange-300 text-gray-700 hover:text-orange-500 font-semibold text-sm py-3 rounded-xl transition-colors"
+                    >
+                        <svg class="w-4 h-4 text-orange-500" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path fill-rule="evenodd" d="m11.54 22.351.07.04.028.016a.76.76 0 0 0 .723 0l.028-.015.071-.041a16.975 16.975 0 0 0 1.144-.742 19.58 19.58 0 0 0 2.683-2.282c1.944-2.079 3.208-4.772 3.208-8.017 0-3.313-1.652-5.76-3.762-7.21A8.987 8.987 0 0 0 12 2a8.987 8.987 0 0 0-3.735.8C6.152 4.241 4.5 6.688 4.5 10.003c0 3.245 1.264 5.938 3.208 8.017a19.58 19.58 0 0 0 2.683 2.282 16.974 16.974 0 0 0 1.144.742l.07.041ZM12 13.5a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" clip-rule="evenodd" />
+                        </svg>
+                        Open in Google Maps
+                    </a>
+                </div>
+
             </div>
 
         </div>
